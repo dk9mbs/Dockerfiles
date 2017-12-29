@@ -8,10 +8,12 @@ RUN apt-get update && apt-get install -y nano apt-utils gradle \
 	&& cd /usr \
 	&& git clone https://github.com/dk9mbs/hm2mqtt.git \
         && cd hm2mqtt \
-        && gradle
+        && gradle addon
 
+ADD start.sh /usr/start.sh
+ADD config /etc/hm2mqtt/config
 
-ENTRYPOINT /bin/bash
+ENTRYPOINT /bin/bash /usr/start.sh
 
-EXPOSE 80
+EXPOSE 3333
 
