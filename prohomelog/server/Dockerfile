@@ -14,5 +14,5 @@ RUN cd /usr/prohomelog/tools/cli && ./build
 
 ENTRYPOINT cd /usr/prohomelog/dist && java -jar ruleengine.jar
 
-EXPOSE 80
+EXPOSE 8888
 
