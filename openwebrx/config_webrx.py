@@ -43,7 +43,7 @@ web_port = 8073
 max_clients = 20
 
 # ==== Web GUI configuration ====
-receiver_name = "DK9"
+receiver_name = "AG5ZL"
 receiver_location = "Salzgitter, Germany"
 receiver_asl = 200
 receiver_admin = "m_buehler@t-online.de"
@@ -150,8 +150,8 @@ sdrs = {
                 "start_freq": 145725000,
                 "start_mod": "nfm",
             },
-            "20m": {
-                "name": "3cm",
+            "3cm": {
+                "name": "10GHz Tropo",
                 "center_freq": 600000000,
                 "rf_gain": 30,
                 "samp_rate": 2400000,
